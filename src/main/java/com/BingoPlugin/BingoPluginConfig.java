@@ -1,11 +1,11 @@
-package com.example;
+package com.BingoPlugin;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup("BingoPlugin")
+public interface BingoPluginConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",

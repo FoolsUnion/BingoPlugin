@@ -1,4 +1,4 @@
-package com.example;
+package com.BingoPlugin;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,15 +14,16 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Bingo Plugin",
+	description = "BA BA BA.... BINGO!"
 )
-public class ExamplePlugin extends Plugin
+public class BingoPlugin extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private ExampleConfig config;
+	private BingoPluginConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +47,8 @@ public class ExamplePlugin extends Plugin
 	}
 
 	@Provides
-	ExampleConfig provideConfig(ConfigManager configManager)
+	BingoPluginConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ExampleConfig.class);
+		return configManager.getConfig(BingoPluginConfig.class);
 	}
 }
